@@ -1,0 +1,126 @@
+{
+  "kind": "build_request",
+  "title": "Create Brother's Live Cartoon booking service website",
+  "projectName": "Brothers Live Cartoon",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a landing page displaying business information for Brother's Live Cartoon including: company name 'BROTHER'S LIVE CARTOON', tagline 'Live Cartoon Characters', address 'Raval Chakala, Jaghnath Bhaghol, Umreth - 388220, Dist - Anand', contact phone number '9427065911', list of available characters (Gorilla, Red Teddy, Yellow Teddy, Doraemon, Mickey Mouse, Motu-Patlu), event types supported (Birthday Party, Wedding Entry and other Events), and service highlights (High Quality Costumes, Energetic Performers, Reasonable Rates)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-message"
+        ],
+        "quotes": [
+          "BROTHER'S LIVE CARTOON",
+          "Raval Chakala, Jaghnath Bhaghol,\\nUmreth - 388220,\\nDist - Anand",
+          "MO: 9427065911"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All business information is displayed clearly and accurately",
+        "Character list shows all six characters mentioned",
+        "Address and contact information are prominently visible",
+        "Service highlights are clearly presented"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a 'Call Now' button that opens the phone dialer with the phone number 9427065911 prefilled when clicked",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-message"
+        ],
+        "quotes": [
+          "void _callNumber() async",
+          "scheme: 'tel'",
+          "path: phone"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Call button is clearly visible and labeled 'Call Now'",
+        "Clicking the button opens the device's phone dialer",
+        "Phone number 9427065911 is automatically prefilled"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement a 'Book on WhatsApp' button that opens WhatsApp with a prefilled message 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.' addressed to phone number 919427065911",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-message"
+        ],
+        "quotes": [
+          "void _openWhatsApp() async",
+          "https://wa.me/91$phone?text=Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character."
+        ]
+      },
+      "acceptanceCriteria": [
+        "WhatsApp button is clearly visible and labeled 'Book on WhatsApp'",
+        "Clicking the button opens WhatsApp web or app",
+        "Message is prefilled with the exact text: 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.'",
+        "Message is addressed to the correct WhatsApp number: 919427065911"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Apply a vibrant, playful visual theme suitable for a children's entertainment service with warm, inviting colors (orange accent color as primary brand color), rounded friendly shapes, and engaging typography that conveys fun and professionalism",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-message"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Orange is used as the primary accent color throughout the design",
+        "Typography is clear, friendly, and appropriate for a family service",
+        "Overall design feels warm, inviting, and professional",
+        "Layout uses visual hierarchy to guide users to key information and action buttons"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Render generated character images as static assets in frontend/public/assets/generated and display them in the character showcase section",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "user-message"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Character images are stored in frontend/public/assets/generated directory",
+        "Images are displayed in the available characters section",
+        "Images load correctly and enhance the visual presentation"
+      ]
+    }
+  ],
+  "constraints": [
+    "Phone number 9427065911 must remain exactly as specified",
+    "WhatsApp prefilled message text must be 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.' without modification",
+    "Business name must be displayed as 'BROTHER'S LIVE CARTOON' with exact capitalization and punctuation",
+    "Orange must be used as the primary brand color"
+  ],
+  "nonGoals": [
+    "Booking form or reservation system",
+    "Payment processing",
+    "Gallery or photo upload functionality",
+    "User accounts or authentication",
+    "Backend data storage for bookings",
+    "Character availability calendar"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Colorful cartoon gorilla character mascot in costume, friendly and energetic pose (gorilla.dim_400x400.png)",
+      "Cute red teddy bear character mascot in costume, welcoming pose (red-teddy.dim_400x400.png)",
+      "Cheerful yellow teddy bear character mascot in costume, playful pose (yellow-teddy.dim_400x400.png)",
+      "Doraemon character mascot, iconic blue cat robot with friendly expression (doraemon.dim_400x400.png)",
+      "Mickey Mouse character mascot in classic pose with welcoming gesture (mickey-mouse.dim_400x400.png)",
+      "Motu-Patlu character duo mascots, both characters together in friendly pose (motu-patlu.dim_400x400.png)",
+      "Vibrant birthday party scene with cartoon characters and children celebrating, colorful balloons and decorations (hero-banner.dim_1200x400.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Brother's Live Cartoon booking service website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a landing page displaying business information for Brother's Live Cartoon",
+      "acceptanceCriteria": [
+        "All business information is displayed clearly and accurately",
+        "Character list shows all six characters mentioned",
+        "Address and contact information are prominently visible",
+        "Service highlights are clearly presented"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add landing page layout displaying business information including company name 'BROTHER'S LIVE CARTOON', tagline 'Live Cartoon Characters', full address 'Raval Chakala, Jaghnath Bhaghol, Umreth - 388220, Dist - Anand', contact phone '9427065911', list of available characters (Gorilla, Red Teddy, Yellow Teddy, Doraemon, Mickey Mouse, Motu-Patlu), event types (Birthday Party, Wedding Entry, and other Events), and service highlights (High Quality Costumes, Energetic Performers, Reasonable Rates)"
+        },
+        {
+          "path": "frontend/src/components/BusinessInfo.tsx",
+          "operation": "create",
+          "description": "Create component displaying company name, tagline, address, and contact phone number with appropriate visual hierarchy"
+        },
+        {
+          "path": "frontend/src/components/CharacterShowcase.tsx",
+          "operation": "create",
+          "description": "Create component displaying the six available characters: Gorilla, Red Teddy, Yellow Teddy, Doraemon, Mickey Mouse, and Motu-Patlu with their respective generated images from frontend/public/assets/generated"
+        },
+        {
+          "path": "frontend/src/components/ServiceHighlights.tsx",
+          "operation": "create",
+          "description": "Create component displaying service highlights: High Quality Costumes, Energetic Performers, and Reasonable Rates, along with event types supported: Birthday Party, Wedding Entry, and other Events"
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a 'Call Now' button that opens the phone dialer with prefilled number",
+      "acceptanceCriteria": [
+        "Call button is clearly visible and labeled 'Call Now'",
+        "Clicking the button opens the device's phone dialer",
+        "Phone number 9427065911 is automatically prefilled"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactButtons.tsx",
+          "operation": "create",
+          "description": "Create component with 'Call Now' button that uses tel: scheme to open phone dialer with number 9427065911 prefilled"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ContactButtons component into the landing page layout in a prominent position"
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement a 'Book on WhatsApp' button with prefilled message",
+      "acceptanceCriteria": [
+        "WhatsApp button is clearly visible and labeled 'Book on WhatsApp'",
+        "Clicking the button opens WhatsApp web or app",
+        "Message is prefilled with the exact text: 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.'",
+        "Message is addressed to the correct WhatsApp number: 919427065911"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactButtons.tsx",
+          "operation": "modify",
+          "description": "Add 'Book on WhatsApp' button that opens WhatsApp using https://wa.me/919427065911 with URL-encoded prefilled message 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.'"
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Apply vibrant, playful visual theme with orange as primary brand color",
+      "acceptanceCriteria": [
+        "Orange is used as the primary accent color throughout the design",
+        "Typography is clear, friendly, and appropriate for a family service",
+        "Overall design feels warm, inviting, and professional",
+        "Layout uses visual hierarchy to guide users to key information and action buttons"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure orange as the primary brand color in the theme colors, add warm accent colors, and configure friendly rounded design tokens"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply warm, inviting color palette with orange accent, configure friendly typography suitable for children's entertainment service, and set up playful visual styling with rounded shapes"
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Render generated character images as static assets and display them in character showcase",
+      "acceptanceCriteria": [
+        "Character images are stored in frontend/public/assets/generated directory",
+        "Images are displayed in the available characters section",
+        "Images load correctly and enhance the visual presentation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CharacterShowcase.tsx",
+          "operation": "modify",
+          "description": "Wire in generated character images from frontend/public/assets/generated: gorilla.dim_400x400.png for Gorilla, red-teddy.dim_400x400.png for Red Teddy, yellow-teddy.dim_400x400.png for Yellow Teddy, doraemon.dim_400x400.png for Doraemon, mickey-mouse.dim_400x400.png for Mickey Mouse, and motu-patlu.dim_400x400.png for Motu-Patlu"
+        },
+        {
+          "path": "frontend/src/components/HeroBanner.tsx",
+          "operation": "create",
+          "description": "Create hero banner component using generated image frontend/public/assets/generated/hero-banner.dim_1200x400.png showing vibrant birthday party scene with cartoon characters and children celebrating"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire HeroBanner component into the landing page at the top of the layout"
+        }
+      ]
+    }
+  ]
+}

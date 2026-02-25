@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Flutter app for Brother's Live Cartoon - a cartoon character booking service with business information display and contact functionality (call and WhatsApp)",
+  "architectural_notes": [
+    "Flutter mobile app using Material Design",
+    "url_launcher package for phone calls and WhatsApp integration",
+    "Single-page layout with business information display",
+    "Contact methods: direct phone call and WhatsApp booking link"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Colorful cartoon gorilla character mascot in costume, friendly and energetic pose (gorilla.dim_400x400.png)\n- Cute red teddy bear character mascot in costume, welcoming pose (red-teddy.dim_400x400.png)\n- Cheerful yellow teddy bear character mascot in costume, playful pose (yellow-teddy.dim_400x400.png)\n- Doraemon character mascot, iconic blue cat robot with friendly expression (doraemon.dim_400x400.png)\n- Mickey Mouse character mascot in classic pose with welcoming gesture (mickey-mouse.dim_400x400.png)\n- Motu-Patlu character duo mascots, both characters together in friendly pose (motu-patlu.dim_400x400.png)\n- Vibrant birthday party scene with cartoon characters and children celebrating, colorful balloons and decorations (hero-banner.dim_1200x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-landing-page-displaying-business-information-for-brother-s-live-cartoon-including-company-name-brother-s-live-cartoon-tagline-live-cartoon-characters-address-raval-chakala-jaghnath-bhaghol-umreth-388220-dist-anand-contact-phone-number-9427065911-list-of-available-characters-gorilla-red-teddy-yellow-teddy-doraemon-mickey-mouse-motu-patlu-event-types-supported-birthday-party-wedding-entry-and-other-events-and-service-highlights-high-quality-costumes-energetic-performers-reasonable-rates",
+      "title": "Create a landing page displaying business information for Brother's Live Cartoon including: company name 'BROTHER'S LIVE CARTOON', tagline 'Live Cartoon Characters', address 'Raval Chakala, Jaghnath Bhaghol, Umreth - 388220, Dist - Anand', contact phone number '9427065911', list of available characters (Gorilla, Red Teddy, Yellow Teddy, Doraemon, Mickey Mouse, Motu-Patlu), event types supported (Birthday Party, Wedding Entry and other Events), and service highlights (High Quality Costumes, Energetic Performers, Reasonable Rates)",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-call-now-button-that-opens-the-phone-dialer-with-the-phone-number-9427065911-prefilled-when-clicked",
+      "title": "Implement a 'Call Now' button that opens the phone dialer with the phone number 9427065911 prefilled when clicked",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-book-on-whatsapp-button-that-opens-whatsapp-with-a-prefilled-message-hello-brother-s-live-cartoon-i-want-to-book-a-cartoon-character-addressed-to-phone-number-919427065911",
+      "title": "Implement a 'Book on WhatsApp' button that opens WhatsApp with a prefilled message 'Hello BROTHER'S LIVE CARTOON, I want to book a cartoon character.' addressed to phone number 919427065911",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-vibrant-playful-visual-theme-suitable-for-a-children-s-entertainment-service-with-warm-inviting-colors-orange-accent-color-as-primary-brand-color-rounded-friendly-shapes-and-engaging-typography-that-conveys-fun-and-professionalism",
+      "title": "Apply a vibrant, playful visual theme suitable for a children's entertainment service with warm, inviting colors (orange accent color as primary brand color), rounded friendly shapes, and engaging typography that conveys fun and professionalism",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-character-images-as-static-assets-in-frontend-public-assets-generated-and-display-them-in-the-character-showcase-section",
+      "title": "Render generated character images as static assets in frontend/public/assets/generated and display them in the character showcase section",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
+  "projectName": "Brother's Live Cartoon",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the landing page layout with header, hero banner, business info, character showcase, service highlights, contact buttons, and footer sections.",
+  "frontend/src/components/HeroBanner.tsx": "Hero banner component displaying the generated hero image with animated sparkles and \"Live Cartoon Characters\" title overlay.",
+  "frontend/src/components/BusinessInfo.tsx": "Business information component displaying address and contact phone number in card layouts with icons.",
+  "frontend/src/components/CharacterShowcase.tsx": "Character showcase component displaying all six available cartoon characters (Gorilla, Red Teddy, Yellow Teddy, Doraemon, Mickey Mouse, Motu-Patlu) with their generated images in a responsive grid.",
+  "frontend/src/components/ServiceHighlights.tsx": "Service highlights component displaying event types and key benefits (High Quality Costumes, Energetic Performers, Reasonable Rates) in card layouts.",
+  "frontend/src/components/ContactButtons.tsx": "Contact buttons component with \"Call Now\" (opens phone dialer with 9427065911) and \"Book on WhatsApp\" (opens WhatsApp with prefilled message) functionality.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright notice and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring warm orange accent colors, success green, and playful design tokens for light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens including orange accent and success green, Inter font family, and rounded border radius settings.",
+  "frontend/src/hooks/useQueries.ts": "Empty hooks file as all functionality is client-side only (no backend queries needed)."
+}
